@@ -1,4 +1,4 @@
-This small Rust project performs a GraphQL query on the Kurara SubQL project. Given an account id, it will pull the total, median, and mean KAR in transfers sent and received for that account.
+This small Rust project performs a GraphQL query on the Karura SubQL project. Given an account id, it will pull the total, median, and mean KAR in transfers sent and received for that account.
 
 # Example
 ```
