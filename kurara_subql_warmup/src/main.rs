@@ -30,7 +30,7 @@ fn perform_query(account_id: &String) -> Result<(), Box<dyn Error>> {
     let client = Client::new();
 
     let response_body = post_graphql::<TransfersQuery, _>(&client, "https://api.subquery.network/sq/AcalaNetwork/karura", variables).unwrap();
-    println!("{:#?}", response_body);
+    //println!("{:#?}", response_body);
 
     let response_data = &response_body.data.expect("missing response data");
     let mut transfer_in_amounts: Vec<i64> = Vec::new();
