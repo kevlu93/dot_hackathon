@@ -1,0 +1,22 @@
+query TransfersQuery($accountid: String!) {
+    accounts (filter: {
+      id: {equalTo: $accountid}
+    }) {
+        nodes {
+            id
+            txCount 
+            transferIn {
+                nodes {
+                    amount
+                }
+                totalCount 
+            }
+            transferOut {
+                nodes {
+                    amount
+                }
+                totalCount
+            }
+        }
+    }
+}
