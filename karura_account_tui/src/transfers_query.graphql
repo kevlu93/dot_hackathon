@@ -1,0 +1,20 @@
+query TransfersQuery($accountid: String!) {
+  accounts (filter: {
+    id: {equalTo: $accountid}
+  }) {
+    nodes {
+      balances {
+        nodes {
+          currency 
+          balance 
+          transfers {
+            nodes {
+              amount
+              date 
+            }
+          }
+        }
+      }
+    }
+  }
+}
