@@ -1,0 +1,13 @@
+query PriceQuery {
+liquidityDailySummaries (orderBy:DATE_ASC) {
+  nodes {
+    id
+    nodeId
+    token0 
+    token1 
+    date 
+    token0DailyTotal 
+    token1DailyTotal
+  }
+}
+} 
